@@ -1,6 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&family=Righteous&display=swap');
+
 .App {
   background-image: url('../images/background.png');
   background-position: center;
   background-size: cover;
   text-align: center;
+  padding: 2rem 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 2.5rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 5px double white;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.section-title {
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Righteous', cursive;
+  border-bottom: 3px solid white;
+  margin-top: 40px;
+}
+
+.planets-container {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  padding: 2.5rem 0 0.5rem;
+}
+
+.planet-card {
+  flex: 1 1 0;
+}
+
+.planet-img {
+  width: 150px;
+}
+
+.missions-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.mission-card {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 2rem 1.5rem 0;
+  padding: 1.1rem 0;
+}
+
+.mission-card h4 {
+  font-size: 1.2rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
 }

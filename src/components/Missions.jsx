@@ -7,6 +7,7 @@ class Missions extends Component {
   render() {
     const missionsCards = missions
       .map(({ name, year, country, destination }, index) => (<MissionCard
+        className="mission-card"
         key={ index }
         name={ name }
         year={ year }
@@ -15,7 +16,7 @@ class Missions extends Component {
       />));
     return (
       <div data-testid="missions">
-        <Title headline="Missões" />
+        <Title className="section-title" headline="Missões" />
         <div className="missions-container">
           { missionsCards }
         </div>

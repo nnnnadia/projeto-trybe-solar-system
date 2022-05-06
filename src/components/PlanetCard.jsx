@@ -4,11 +4,14 @@ import PropTypes from 'prop-types';
 class PlanetCard extends Component {
   render() {
     const { planetName, planetImage } = this.props;
-    const altText = `Planeta ${planetName}`;
     return (
-      <div data-testid="planet-card">
+      <div data-testid="planet-card" className="planet-card">
+        <img
+          src={ planetImage }
+          alt={ `Planeta ${planetName}` }
+          className="planet-img"
+        />
         <h3 data-testid="planet-name">{ planetName }</h3>
-        <img src={ planetImage } alt={ altText } />
       </div>
     );
   }
